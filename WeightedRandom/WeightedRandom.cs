@@ -7,12 +7,12 @@ namespace WeightedRandom
 {
     public class WeightedRandom
     {
-        public static KeyValuePair<string, int> GetWeightedRandom(Dictionary<string, int> dic, Random rndm)
+        public static KeyValuePair<TKey, int> GetWeightedRandom<TKey>(Dictionary<TKey, int> dic, Random rndm)
         {
             int rndMemberId = 0,                
                 totalWeight = 0,
                 partSum = 0;
-            KeyValuePair<string, int> dicElement = dic.First(); 
+            KeyValuePair<TKey, int> dicElement = dic.First(); 
 
             //Получаем сумму весов всех элементов
             //Таблицу значение-вес можно преобразовать в массив типа АБББВВГГГГ,

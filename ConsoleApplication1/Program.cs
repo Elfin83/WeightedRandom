@@ -10,6 +10,7 @@ namespace ConsoleApplication1
         {
             Dictionary<string, int> dic = new Dictionary<string, int>();
             DictionaryInitialize(dic);
+            
             var rnd = new Random();
             string symbol = "";
 
